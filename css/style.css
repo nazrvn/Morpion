@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+p:first-of-type {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    margin: 3rem auto;
+    gap: 10px;
+}
+
+.case {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.case:hover {
+    transform: scale(1.05);
+}
+
+.case:active {
+    transform: scale(0.9);
+}
+
+.x {
+    color: #ff2e63;
+    text-shadow: 2px 2px #000;
+}
+
+.o {
+    color: #0097e6;
+    text-shadow: 2px 2px #000;
+}
+
+#score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+#score span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+#score .current-player {
+    color: #0097e6;
+    text-shadow: 2px 2px #000;
+}
+
+#score .player1 {
+    color: #ff2e63;
+    text-shadow: 2px 2px #000;
+}
+
+#score .player2 {
+    color: #34a853;
+    text-shadow: 2px 2px #000;
+}
+
+#score .score-separator {
+    margin: 0 1rem;
+}
+
+#reset {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    background-color: #ff2e63;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #d9004c;
+    transform: scale(1.05);
+}
+
+#reset:active {
+    background-color: #b3003a;
+    transform: scale(0.9);
+}
