@@ -60,16 +60,6 @@ p:first-of-type {
     transform: scale(0.9);
 }
 
-.x {
-    color: #ff2e63;
-    text-shadow: 2px 2px #000;
-}
-
-.o {
-    color: #0097e6;
-    text-shadow: 2px 2px #000;
-}
-
 #score {
     display: flex;
     justify-content: space-between;
@@ -85,45 +75,17 @@ p:first-of-type {
     margin-right: 1rem;
 }
 
-#score .current-player {
+#score #joueur {
     color: #0097e6;
     text-shadow: 2px 2px #000;
 }
 
-#score .player1 {
+#score1 {
     color: #ff2e63;
     text-shadow: 2px 2px #000;
 }
 
-#score .player2 {
+#score2 {
     color: #34a853;
     text-shadow: 2px 2px #000;
-}
-
-#score .score-separator {
-    margin: 0 1rem;
-}
-
-#reset {
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 2rem;
-    background-color: #ff2e63;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#reset:hover {
-    background-color: #d9004c;
-    transform: scale(1.05);
-}
-
-#reset:active {
-    background-color: #b3003a;
-    transform: scale(0.9);
 }
